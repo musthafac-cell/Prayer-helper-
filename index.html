@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-T-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayer Helper Chatbot</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^0.14.0",
+        "marked": "https://esm.sh/marked@^15.0.7"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="chat-container">
+    <header>
+      <h1>Prayer Helper Bot</h1>
+    </header>
+    <div id="message-list" role="log" aria-live="polite">
+      </div>
+    <div id="input-area">
+      <textarea id="message-input" placeholder="Ask about prayer in Malayalam, Arabic, or English..." aria-label="Message input"></textarea>
+      <button id="send-button" aria-label="Send message">Send</button>
+    </div>
+    <div id="loading-indicator" class="hidden" aria-label="Loading response">
+      <div class="spinner"></div>
+      <span>Thinking...</span>
+    </div>
+  </div>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
